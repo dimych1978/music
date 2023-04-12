@@ -1,4 +1,4 @@
-import './App.css';
+import './style.css';
 import Bar from './components/bar';
 import Centerblock from './components/centerblock/menu';
 import SideBar from './components/centerblock/sidebar'

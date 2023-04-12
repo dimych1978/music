@@ -135,13 +135,13 @@ function PlayBar() {
             <div className="player__track-play track-play">
               <div className="track-play__contain">
                 <NoteIcon />
-                {trackPlay.map((track) => {
+                {trackPlay.map((track) => (
                   <PlayData
                     key={track.id}
                     author={track.author}
                     album={track.album}
-                  />;
-                })}
+                  />
+                ))}
               </div>
               <div className="track-play__like-dis">
                 <LikeIcon />
