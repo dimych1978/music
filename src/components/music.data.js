@@ -2,7 +2,7 @@ export const menuList = [
   { id: '1', menuItemLink: 'http://', menuItemName: 'Главное' },
   { id: '2', menuItemLink: 'http://', menuItemName: 'Мой плейлист' },
   { id: '3', menuItemLink: 'http://', menuItemName: 'Войти' },
-];
+]
 export const tracks = [
   {
     id: 1,
@@ -14,6 +14,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '4:44',
+    year: '1969',
+    genre: '',
   },
   {
     id: 2,
@@ -25,6 +27,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '2:22',
+    year: '1970',
+    genre: 'rock',
   },
   {
     id: 3,
@@ -36,6 +40,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '2:22',
+    year: '',
+    genre: 'techno',
   },
   {
     id: 4,
@@ -47,6 +53,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '4:12',
+    year: '',
+    genre: '',
   },
   {
     id: 5,
@@ -58,6 +66,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '2:54',
+    year: '',
+    genre: '',
   },
   {
     id: 6,
@@ -69,6 +79,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '5:20',
+    year: '',
+    genre: '',
   },
   {
     id: 7,
@@ -80,6 +92,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '3:41',
+    year: '',
+    genre: '',
   },
   {
     id: 8,
@@ -91,6 +105,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '1:48',
+    year: '',
+    genre: '',
   },
   {
     id: 9,
@@ -102,6 +118,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '3:32',
+    year: '',
+    genre: '',
   },
   {
     id: 10,
@@ -113,6 +131,8 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '3:36',
+    year: '',
+    genre: '',
   },
   {
     id: 11,
@@ -124,11 +144,78 @@ export const tracks = [
     iconLinkNote: '/img/icon/sprite.svg#icon-note',
     iconLinkLike: '/img/icon/sprite.svg#icon-like',
     trackTime: '3:36',
+    year: '',
+    genre: '',
   },
-];
+  {
+    id: 12,
+    title: '',
+    link: '',
+    span: '',
+    author: '',
+    album: '',
+    iconLinkNote: '',
+    iconLinkLike: '',
+    trackTime: '',
+    year: '',
+    genre: '',
+  },
+  {
+    id: 13,
+    title: '',
+    link: '',
+    span: '',
+    author: '',
+    album: '',
+    iconLinkNote: '',
+    iconLinkLike: '',
+    trackTime: '',
+    year: '',
+    genre: '',
+  },
+  {
+    id: 14,
+    title: '',
+    link: '',
+    span: '',
+    author: '',
+    album: '',
+    iconLinkNote: '',
+    iconLinkLike: '',
+    trackTime: '',
+    year: '',
+    genre: '',
+  },
+  {
+    id: 15,
+    title: '',
+    link: '',
+    span: '',
+    author: '',
+    album: '',
+    iconLinkNote: '',
+    iconLinkLike: '',
+    trackTime: '',
+    year: '',
+    genre: '',
+  },
+  {
+    id: '',
+    title: '',
+    link: '',
+    span: '',
+    author: '',
+    album: '',
+    iconLinkNote: '',
+    iconLinkLike: '',
+    trackTime: '',
+    year: '',
+    genre: '',
+  },
+]
 
 export const trackPlay = [
-    {
+  {
     id: 1,
     author: 'Ты та',
     album: 'Баста',
@@ -138,5 +225,4 @@ export const trackPlay = [
     author: '',
     album: '',
   },
-
 ]

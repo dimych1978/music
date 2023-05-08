@@ -1,25 +1,16 @@
-import { menuList } from './music.data';
+import NavBurger from './burger/navburger'
+import { menuList } from '../music.data'
 
-function NavBurger() {
+export function MenuList(status) {
   return (
-    <div className="nav__burger burger">
-      <span className="burger__line"></span>
-      <span className="burger__line"></span>
-      <span className="burger__line"></span>
-    </div>
-  );
-}
-
-function MenuList() {
-  return (
-    <div className="nav__menu menu">
+    <div className="nav__menu menu" style={{ display: { status } }}>
       <section className="menu__list">
         <div className="menu__item">
           <MenuItem />
         </div>
       </section>
     </div>
-  );
+  )
 }
 
 function Logo() {
@@ -27,10 +18,10 @@ function Logo() {
     <div className="nav__logo logo">
       <img className="logo__image" src="img/logo.png" alt="logo"></img>
     </div>
-  );
+  )
 }
 
-function MenuItem() {
+export function MenuItem() {
   return (
     <ul>
       {menuList.map((paragraph) => (
@@ -39,7 +30,7 @@ function MenuItem() {
         </li>
       ))}
     </ul>
-  );
+  )
 }
 
 function Bar() {
@@ -48,9 +39,8 @@ function Bar() {
       {' '}
       <Logo />
       <NavBurger />
-      <MenuList />{' '}
     </nav>
-  );
+  )
 }
 
-export default Bar;
+export default Bar

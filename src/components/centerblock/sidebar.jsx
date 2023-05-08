@@ -1,3 +1,30 @@
+import { useEffect, useState } from 'react'
+
+function SideBarItem({ props }) {
+  const [image, setImage] = useState('')
+
+  const emulation = () => {
+    setTimeout(() => setImage(`img/playlist0${props}.png`), 3000)
+  }
+  useEffect(() => {
+    const element = document.querySelector('.sidebar__item')
+    element.addEventListener('load', emulation())
+  })
+
+  return (
+    <div className="sidebar__item" style={{ background: '#313131' }}>
+      <a className="sidebar__link" href="#">
+        <img
+          className="sidebar__img"
+          // onLoad={clearTimeout(setImage)}
+          src={image}
+          alt="day's playlist"
+        />
+      </a>
+    </div>
+  )
+}
+
 function SideBar() {
   return (
     <div className="main__sidebar sidebar">
@@ -7,37 +34,13 @@ function SideBar() {
       </div>
       <div className="sidebar__block">
         <div className="sidebar__list">
-          <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-              <img
-                className="sidebar__img"
-                src="img/playlist01.png"
-                alt="day's playlist"
-              />
-            </a>
-          </div>
-          <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-              <img
-                className="sidebar__img"
-                src="img/playlist02.png"
-                alt="day's playlist"
-              />
-            </a>
-          </div>
-          <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-              <img
-                className="sidebar__img"
-                src="img/playlist03.png"
-                alt="day's playlist"
-              />
-            </a>
-          </div>
+          <SideBarItem props={1} />
+          <SideBarItem props={2} />
+          <SideBarItem props={3} />
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default SideBar;
+export default SideBar

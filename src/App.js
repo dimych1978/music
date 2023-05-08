@@ -1,10 +1,9 @@
-import './style.css';
-import Bar from './components/bar';
-import Centerblock from './components/centerblock/menu';
+import './skypro/css/style.css'
+import Bar from './components/bar/bar'
+import Centerblock from './components/centerblock/menu/menu'
 import SideBar from './components/centerblock/sidebar'
 import PlayBar from './components/centerblock/player-bar'
-import Footer from './components/footer';
-
+import Footer from './components/footer'
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
