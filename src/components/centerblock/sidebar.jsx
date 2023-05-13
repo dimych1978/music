@@ -1,25 +1,28 @@
 import { useEffect, useState } from 'react'
 
 function SideBarItem({ props }) {
-  const [image, setImage] = useState('')
-
+  const [image, setImage] = useState(
+    { background: { background: '#313131' } }
+ )
+ const [alt, setAlt] = useState('')
   const emulation = () => {
-    setTimeout(() => setImage(`img/playlist0${props}.png`), 3000)
+    setImage({
+      img: `img/playlist0${props}.png`,
+      background: { background: '#313131' },
+    })
+    setAlt("day's playlist")
   }
+
   useEffect(() => {
     const element = document.querySelector('.sidebar__item')
-    element.addEventListener('load', emulation())
+    setTimeout(() => {
+      element.addEventListener('load', emulation())
+    }, 3000)
   })
-
   return (
-    <div className="sidebar__item" style={{ background: '#313131' }}>
+    <div className="sidebar__item" style={image.background}>
       <a className="sidebar__link" href="#">
-        <img
-          className="sidebar__img"
-          // onLoad={clearTimeout(setImage)}
-          src={image}
-          alt="day's playlist"
-        />
+        <img className="sidebar__img" src={image.img} alt={alt} />
       </a>
     </div>
   )

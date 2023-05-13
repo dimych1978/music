@@ -38,10 +38,10 @@ function FilterGenre() {
       }`}
       onClick={clickOut}
     >
-      {' '}
+     
       {status === 'block' ? <Count /> : ''}
       <div ref={divRef} style={{ display: status, position: 'absolute' }}>
-        <DropMenuGenre />{' '}
+        <DropMenuGenre />
       </div>
       жанру
     </div>

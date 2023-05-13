@@ -36,7 +36,6 @@ export function MenuItem() {
 function Bar() {
   return (
     <nav className="main__nav nav">
-      {' '}
       <Logo />
       <NavBurger />
     </nav>

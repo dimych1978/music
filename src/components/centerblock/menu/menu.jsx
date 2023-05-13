@@ -10,7 +10,7 @@ function Search() {
         type="search"
         placeholder="Поиск"
         name="search"
-      ></input>{' '}
+      ></input>
     </div>
   )
 }

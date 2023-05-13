@@ -3,7 +3,7 @@ import BurgerLine from './burgerline'
 import { useState } from 'react'
 
 function NavBurger() {
-  const [status, setStatus] = useState('inline-block')
+  const [status, setStatus] = useState('none')
   const hideStatus = () => {
     setStatus(status === 'inline-block' ? 'none' : 'inline-block')
   }

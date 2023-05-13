@@ -37,7 +37,6 @@ function FilterAuthor() {
       }`}
       onClick={clickOut}
     >
-      {' '}
       {status === 'block' ? <Count /> : ''}
       <div ref={divRef} style={{ display: status, position: 'absolute' }}>
         <DropMenuAuthor />

@@ -38,10 +38,10 @@ function FilterYear() {
       }`}
       onClick={clickOut}
     >
-      {' '}
+      
       {status === 'block' ? <Count /> : ''}
       <div ref={divRef} style={{ display: status, position: 'absolute' }}>
-        <DropMenuYear />{' '}
+        <DropMenuYear />
       </div>
       году выпуска
     </div>
