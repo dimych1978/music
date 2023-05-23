@@ -214,15 +214,7 @@ export const tracks = [
   },
 ]
 
-export const trackPlay = [
-  {
-    id: 1,
+export const trackPlay = {
     author: 'Ты та',
     album: 'Баста',
-  },
-  {
-    id: 2,
-    author: '',
-    album: '',
-  },
-]
+}

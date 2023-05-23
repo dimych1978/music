@@ -1,17 +1,17 @@
-import './skypro/css/style.css'
-import Bar from './components/bar/bar'
-import Centerblock from './components/centerblock/menu/menu'
-import SideBar from './components/centerblock/sidebar'
-import PlayBar from './components/centerblock/player-bar'
+import styles from './App.module.css'
+import Nav from './components/main/nav/nav'
+import Centerblock from './components/main/centerblock/centerblock'
+import SideBar from './components/main/sidebar/sidebar'
+import PlayBar from './components/player-bar/player-bar'
 import Footer from './components/footer'
 
 function App() {
   return (
     <div className="App">
-      <div className="wrapper">
-        <div className="container">
-          <main className="main">
-            <Bar />
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <main className={styles.main}>
+            <Nav />
             <Centerblock />
             <SideBar />
           </main>
